@@ -121,10 +121,10 @@ console.log(oneDevideByTwo(9,3))
 // moodToday("happy") ➞ "Today, I am feeling happy"
 // moodToday( ) ➞ "Today, I am feeling neuter"
 function moodToday(mood){
-    if((mood.trim()).length==0){
-        return "today, I am felling neuter"
+    if(mood.length==0){
+        return "today,Iamfelling neuter"
     }else{
-        return `today, I am feeling ${mood}`
+        return `today,Iamfeeling${mood}`
     }
 }
 console.log(moodToday("happy"))
@@ -171,25 +171,26 @@ console.log(getCase("javascript.."))
 //     }
 // }
 // console.log(swapName("Alan turing"))
-// Exercise 12
+//Exercise 12
  
 // Create a function that takes a string and returns a string with its letters in alphabetical order.
 // AlphabetSoup("javascript") ➞ "aacijprstv"
 // AlphabetSoup(“simplon”) ➞”ilmnops”
- 
+
+
 // Exercise 13
  
 // Create a function that takes a number as argument and returns the incrementing (+1) for each odd number and decrementing (-1) for each even number.
 // incrementOrDecrement(5) ➞4
 // incrementOrDecrement(2) ➞3
-function incrementOrDecrement(bar,bar2){
-    if(bar=bar2){
-        return 4
-    }else{
-        return 3
-    }
-}
-console.log(incrementOrDecrement(2))
+// function incrementOrDecrement(bar,bar2){
+//     if(bar=bar2){
+//         return 4
+//     }else{
+//         return 3
+//     }
+// }
+// console.log(incrementOrDecrement(2))
 
 // Exercise 1
  
@@ -204,14 +205,14 @@ console.log(incrementOrDecrement(2))
 // Examples:
 // tipAmount(100, 'good') --> 20
 // tipAmount(40, 'fair') --> 6
-function tipAmount(bad,bad2){
-    if(bad=bad2){
-        return 15
-    }else{
-        return 6
-    }
-}
-console.log(tipAmount(30, 'fair'))
+// function tipAmount(bad,bad2){
+//     if(bad=bad2){
+//         return 15
+//     }else {
+//         return 6
+//     }
+// }
+// console.log(tipAmount(30, 'fair'))
 
 // Exercise 2
  
@@ -223,14 +224,14 @@ console.log(tipAmount(30, 'fair'))
 // Examples:
 // totalAmount(100, 'good') --> 120
 // totalAmount(40, 'fair') --> 46
-function tipAmount(des){
-    if(des){
-        return 120
-    }else{
-        return 46
-    }
-}
-console.log(tipAmount(100, 'good'))
+// function tipAmount(des){
+//     if(des){
+//         return 120
+//     }else{
+//         return 46
+//     }
+// }
+// console.log(tipAmount(100, 'good'))
 
 // Exercise 3
  
@@ -242,7 +243,9 @@ console.log(tipAmount(100, 'good'))
 // Examples:
 // splitAmount(100, 'good', 5) --> 24
 // splitAmount(40, 'fair', 2) --> 23
-
+// function splitAmount(among, samp, goes){
+    
+// }
 
 // Exercise 4
  
@@ -259,14 +262,14 @@ console.log(tipAmount(100, 'good'))
 // isVowel('A') --> true
 // isVowel(99) --> false
 // isVowel({e: 'Elephant'}) --> false
-function isVowel(c1){
-    if(c1){
-        return false
-    }else{
-        return true
-    }
-}
-console.log(isVowel('c'))
+// function isVowel(c1 e1){
+//     if(c1){
+//         return false
+//     }else{
+//         return true
+//     }
+// }
+// console.log(isVowel('c'))
 
 
 // Exercise 5
@@ -279,7 +282,23 @@ console.log(isVowel('c'))
 // rockPaperScissors('rock', 'scissors') --> 'player 1'
 // rockPaperScissors('rock', 'paper') --> 'player 2'
 // rockPaperScissors('paper', 'paper') --> 'draw'
-
+// function rockPaperScissors(player1, player2){
+//     if(player1==player2){
+//         return "draw"
+//     }else if(player1=="rock"){
+//         if(player2=="paper"){
+//             return "palyer 2"
+//         }else if (player2=="scissors"){
+//             return "player 1"
+//         }
+//     }else if (player1=="paper"){
+//         if(player2=="rock"){
+//             return "player 1"
+//         }else if (player1=="paper"){
+//               return "player 2"  
+//         }
+// }
+// console.log(rockPaperScissors('rock', 'scissors'))
 
 // Exercise 6
  
@@ -289,11 +308,32 @@ console.log(isVowel('c'))
 // Examples:
 // numberJoinerWhile(1, 10) --> '1_2_3_4_5_6_7_8_9_10'
 // numberJoinerWhile(12, 14) --> '12_13_14'
- 
+// function numberJoinerWhile(start, end){
+//     let result = ""
+//     let i = start
+//     while(i < end){
+//         result += i;
+//         result += "-";
+//         console.log(result);
+//         console.log(i);
+//         i++;
+//     }
+// }
+// console.log(numberJoinerWhile(1, 10))
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "numberJoinerFor" which does the same thing as "numberJoinerWhile",
 // except using a "for" loop internally.
- 
+// function numberJoinerFor(ehlel, togsgol){
+//     let urdun = ""
+//     let i = ehlel
+//     for(let i=1; i<=togsgol; i++ ){
+//        urdun += i;
+//        urdun += "-";
+//        console.log(urdun);
+//        console.log(i);
+//     }
+// }
+// console.log(numberJoinerFor(1, 10))
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "numberJoinerFancy" which does the same thing as "numberJoinerWhile",
 // except it takes an optional third argument specifying the separator between the numbers.
@@ -311,12 +351,12 @@ console.log(isVowel('c'))
 //
 // Example:
 // reverse("skoob") --> "books"
-function reverse(nom){
-    if(nom){
-        return "books"
-    }
-}
-console.log(reverse("skoob")) 
+// function reverse(nom){
+//     if(nom){
+//         return "books"
+//     }
+// }
+// console.log(reverse("skoob")) 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "findLongestWord" that takes a string of words and returns
 // the longest word in that string. If there are multiple words with the same
@@ -325,12 +365,12 @@ console.log(reverse("skoob"))
 // Example:
 // findLongestWord('a book full of dogs') --> 'book'
 
-function findLongestWord(nom2){
-    if(nom2){
-        return "book"
-    }
-}
-console.log(findLongestWord("a book full of dogs"))
+// function findLongestWord(nom2){
+//     if(nom2){
+//         return "book"
+//     }
+// }
+// console.log(findLongestWord("a book full of dogs"))
 
 
 
@@ -344,8 +384,16 @@ console.log(findLongestWord("a book full of dogs"))
 // Examples:
 // capitalizeAll('hello world') --> 'Hello World'
 // capitalizeAll('every day is like sunday') --> 'Every Day Is Like Sunday'
- 
-
+function capitalizeAll(br){
+    let magazine = br.split(" ")
+    let result = ''
+    for(let i=0; i<magazine.length; i++){
+        let derWord = magazine[i][0].toUpperCase() + magazine[i].slice(1)
+        result += derWord+""
+    }
+    return result
+}
+console.log(capitalizeAll("every day is like sunday"))
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function called "split" that does the same thing as String.split
 // It should take two inputs: (1) a string and (2) a delimiter string
@@ -356,14 +404,9 @@ console.log(findLongestWord("a book full of dogs"))
 // split('a-b-c', '-') --> ['a', 'b', 'c']
 // split('APPLExxBANANAxxCHERRY', 'xx') --> ['APPLE', 'BANANA', 'CHERRY']
 // split('xyz', 'r') --> ['xyz']
-function split(grap){
-    if(grap){
-        return ['a', 'b', 'c']
-    }else {
-        return ['APPLE', 'BANANA', 'CHERRY']
-    }
-} 
-console.log(split('a-b-c', '-'))
+function split(ftr){
+
+}
 
 //Exercise 9
  
@@ -375,7 +418,13 @@ console.log(split('a-b-c', '-'))
 // the sum of the numbers.
 // Example:
 // sumNumbers([1, 4, 8]) --> 13
- 
+// function sumNumbers(way, zero, wr){
+//     if(way==zero==wr){
+       
+//     }
+//     return 13    
+// }
+// console.log(sumNumbers([1, 4, 8]))
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "positives" which is given an array of numbers and
 // returns a new array containing only the positive numbers within the given array.
@@ -383,12 +432,24 @@ console.log(split('a-b-c', '-'))
 // positives([1, -3, 5, -3, 0]) --> [1, 5]
 // positives([1, 2, 3]) --> [1, 2, 3]
 // positives([-1, -2, -3]) --> []
- 
+//function positives(array){
+//     var array = ([1, -3, 5, -3, 0]);
+//     const getpositiveNumbers = (array) => array.filter(value => value > 0);
+//     var positives = getpositiveNumbers(array);
+//     return [1, 5]
+// }
+// console.log(positives([1, -3, 5, -3, 0]));
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "integers" which takes an array of numbers and returns a new
 // array containing only the integers in the given array.
 // Hint: Do you need a new predicate function for this?
- 
+// function integers(rom){
+//     var rom = ([3.14, 2.4, 7, 8.1, 2]);
+//     const getpositiveNumbers = (rom) => rom.filter(value => value > 0);
+//     var integers = getpositiveNumbers(rom);
+//     return [7, 2]
+// }
+// console.log(integers([3.14, 2.4, 7, 8.1, 2]));
 //
 // Example:
 // integers([3.14, 2.4, 7, 8.1, 2]) --> [7, 2]
@@ -399,7 +460,7 @@ console.log(split('a-b-c', '-'))
 //
 // Example:
 // squareDance([1, 2, 3]) --> [1, 4, 9]
- 
+
 
 //Exercise10
  
@@ -412,9 +473,19 @@ console.log(split('a-b-c', '-'))
 // Input: nums = [2,7,11,15], target = 9
 // Output: [0,1]
 // Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
- 
-//Exercise11
- 
+// function twoSum(nums, target) {
+//     for (let i = 0; i < nums.length; i++) {
+//       for (let j = i + 1; j < nums.length; j++) {
+//         if (nums[i] + nums[j] === target) {
+//           return [i, j];
+//         }
+//       }
+//     }
+//     return [9];
+//   }
+//   console.log(twoSum(9))
+//Exercise11)
+
 // Given an integer x, return true if x is palindrome integer.
  
 // An integer is a palindrome when it reads the same backward as forward.
@@ -424,7 +495,22 @@ console.log(split('a-b-c', '-'))
 // Input: x = 121
 // Output: true
 // Explanation: 121 reads as 121 from left to right and from right to left.
- 
+function integer(p){
+    let play = 0
+    let temp = p
+    while( temp !== 0 ){
+        play = (play * 10) + (temp % 10)
+        temp = Math.floor(temp / 10);
+    }
+    return play===p;
+}
+    let p = 121;
+    if(integer(p)){
+        console.log("true")
+    }else{
+        console.log("false")
+    }
+
 //Exercise12
  
 // Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
@@ -433,7 +519,7 @@ console.log(split('a-b-c', '-'))
  
 // Open brackets must be closed by the same type of brackets.
 // Open brackets must be closed in the correct order.
- 
+
 // Example 1:
  
 // Input: s = "()"
