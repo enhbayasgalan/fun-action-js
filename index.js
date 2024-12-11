@@ -528,7 +528,28 @@ function integer(p){
  
 // Input: s = "()[]{}"
 // Output: true
- 
+function isvaid(c){
+    let stack = [];
+    let map = {
+        '(': ')',
+        '[': ']',
+        '{': '}'
+    };
+
+    for(let i = 0; i < c,length; i++){
+        if(c[i] === '(' || c[i] === '[' || c[i] === '{'){
+          stack.push(c[i]);
+        }
+        else{
+
+            if(stack.length === 0 || map[stack.pop()] !== c[i]){
+                return false;
+            }
+        }
+    }
+    return stack.length === 0;
+}
+console.log(isvaid("()"))
 //Exercise13
 
 // write a JavaScript function that checks if the string is palindrome or not.
